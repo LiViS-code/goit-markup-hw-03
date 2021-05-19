@@ -8,7 +8,6 @@
   --font-weight-black: 900;
   --text-color: #212121;
   --text-light-color: #ffffff;
-  --text-dark-color: #000000;
   --text-muted-color: #757575;
   --accent-color: #2196f3;
   --background-prime-color: #ffffff;
@@ -76,6 +75,9 @@ body {
 /* логотип */
 
 .logo-link {
+  --logo-dark-color: #000000;
+  --logo-light-color: #ffffff;
+  --logo-accent-color: var(--accent-color);
   padding-top: 24px;
   padding-bottom: 25px;
   font-family: "Raleway", sans-serif;
@@ -83,13 +85,13 @@ body {
   font-size: 26px;
   text-decoration: none;
   line-height: 1.174;
-  color: var(--text-dark-color);
+  color: var(--logo-dark-color);
 }
 
 /* стилизация первого слова в логотипе */
 
 .logo-link > span {
-  color: var(--accent-color);
+  color: var(--logo-accent-color);
 }
 
 /* общий контейнер для всех разделов и секций */
@@ -333,7 +335,7 @@ body {
 .footer-box .logo-link {
   padding-top: 0;
   padding-bottom: 0;
-  color: var(--text-light-color);
+  color: var(--logo-light-color);
 }
 
 /* адресный список ссылок*/
