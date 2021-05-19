@@ -238,6 +238,19 @@ body {
   color: var(--text-muted-color);
 }
 
+/* список особенностей */
+
+.features-box .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* особенность - элемент списка */
+
+.features-box .list-item {
+  width: 270px;
+}
+
 /* Секция Чем мы занимаемся */
 
 /* стилизация заголовков секции Чем мы занимаемся */
