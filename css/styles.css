@@ -54,7 +54,7 @@ body {
 /* ! временный костыль */
 
 .hidden-title {
-  display: none;
+  font-size: 0;
 }
 
 /* общий стиль для параграфов */
@@ -108,12 +108,13 @@ body {
 
 /* header */
 
+.header-page {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-box {
-  margin-top: 0;
-  margin-bottom: 0;
   padding: 0 15px;
   display: flex;
-  /* border-bottom: #ececec; */ /* TODO разобраться куда его сунуть */
 }
 
 /* навигация */
@@ -319,6 +320,10 @@ body {
 /* ================== */
 /* оформление подвала */
 
+.footer-page {
+  background-color: var(--background-secondary-color);
+}
+
 /* основной контейнер подвала */
 
 .footer-box {
@@ -326,7 +331,6 @@ body {
   padding-bottom: 60px;
   margin-top: 0;
   margin-bottom: 0;
-  background-color: var(--background-secondary-color);
 }
 
 /* стилизация логотипа в подвале */
@@ -403,7 +407,7 @@ body {
 
 .sample-list {
   width: 370px;
-  font-size: 0;
+  line-height: 0;
   background-color: var(--background-prime-color);
 }
 
