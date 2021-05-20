@@ -184,6 +184,12 @@ body {
   color: var(--accent-color);
 }
 
+/* изображение в карточках команды и порфолио */
+
+.card > img {
+  display: block;
+}
+
 /* офомление шапки сайта */
 /* ===================== */
 
@@ -287,7 +293,7 @@ body {
 
 /* стилизация карточки сотрудника */
 
-.team-list .item {
+.team-card {
   width: 270px;
   background-color: var(--background-prime-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -298,7 +304,7 @@ body {
 
 /* стилизация фамилия, имя сотрудника */
 
-.team-list .title {
+.team-card .title {
   padding-top: 30px;
   text-align: center;
   font-weight: var(--font-weight-medium);
@@ -308,7 +314,7 @@ body {
 
 /* стилизация должности стотрудинка */
 
-.team-list .text {
+.team-card .text {
   text-align: center;
   font-size: 16px;
   line-height: 1.172;
@@ -391,35 +397,36 @@ body {
 
 /* карточка - элемент портфолио */
 
-.sample-list {
+.project-list {
   width: 370px;
-  line-height: 0;
+  display: flex;
   background-color: var(--background-prime-color);
 }
 
 /* заголовок элемента портфолио */
 
-.sample-list .title {
+.project-card .title {
+  --project-card-border: 1px solid #eee;
   padding-top: 20px;
   padding-left: 24px;
   font-weight: var(--font-weight-bold);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
+  border-left: var(--project-card-border);
+  border-right: var(--project-card-border);
 }
 
 /* описание элемента портфолио */
 
-.sample-list .text {
+.project-card .text {
   padding-top: 4px;
   padding-bottom: 20px;
   padding-left: 24px;
   font-size: 16px;
   line-height: 1.875;
   color: var(--text-muted-color);
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-left: var(--project-card-border);
+  border-right: var(--project-card-border);
+  border-bottom: var(--project-card-border);
 }
