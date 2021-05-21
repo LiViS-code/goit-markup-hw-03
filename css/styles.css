@@ -157,14 +157,10 @@ body {
   color: var(--text-color);
 }
 
-.list-item:not(:first-child) {
-  margin-left: 50px;
-}
-
 /* список ссылок с контактами */
 
 .contact-list {
-  margin-left: 311px;
+  margin-left: 331px;
   padding: 32px 0;
   display: flex;
 }
@@ -173,6 +169,13 @@ body {
 
 .contact-list > .link {
   color: var(--text-muted-color);
+}
+
+/* расстояние между ссылками в шапке */
+
+.nav-list .item:not(:first-child),
+.contact-list .item:not(:first-child) {
+  margin-left: 50px;
 }
 
 /* 
