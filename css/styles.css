@@ -89,6 +89,14 @@ body {
   list-style-type: none;
 }
 
+/* интервалы между фото в секциях */
+
+.doing-list :not(:first-child),
+.features-list .item:not(:first-child),
+.team-card:not(:first-child) {
+  margin-left: 30px;
+}
+
 /* логотип */
 
 .logo-link {
@@ -192,7 +200,7 @@ body {
   color: var(--accent-color);
 }
 
-/* изображение в карточках команды и порфолио */
+/* убрал нижний зазор во всех сприсках с картинками */
 
 .card > img {
   display: block;
@@ -267,20 +275,28 @@ body {
   width: 270px;
 }
 
-/* интервал между элементами */
-
-.features-box .list-item:not(:first-child) {
-  margin-left: 30px;
-}
-
 /* Секция Чем мы занимаемся */
+
+/* убираем лишние отсупы */
+
+.doing-box .container {
+  padding-top: 0;
+}
 
 /* стилизация заголовков секции Чем мы занимаемся */
 
 .doing-box .title {
+  margin-bottom: 50px;
+  text-align: center;
   font-weight: var(--font-weight-bold);
   font-size: 36px;
   line-height: 1.17;
+}
+
+/* фото примеров */
+
+.doing-list {
+  display: flex;
 }
 
 /* Секция наша команда */
@@ -290,18 +306,20 @@ body {
   background-color: var(--backgrount-third-color);
 }
 
+/* список карточек сотрудников */
+
+.team-list {
+  display: flex;
+}
+
 /* стилизация заголовков секции наша команда */
 
 .team-box .title {
+  padding-bottom: 50px;
+  text-align: center;
   font-weight: var(--font-weight-bold);
   font-size: 36px;
   line-height: 1.172;
-}
-
-/* размеры и положение карточек сотрудников */
-
-.team-list {
-  list-style-type: none;
 }
 
 /* стилизация карточки сотрудника */
@@ -319,18 +337,20 @@ body {
 
 .team-card .title {
   padding-top: 30px;
+  padding-bottom: 10px;
   text-align: center;
   font-weight: var(--font-weight-medium);
   font-size: 16px;
-  line-height: 1.172;
+  line-height: 1.188;
 }
 
 /* стилизация должности стотрудинка */
 
 .team-card .text {
+  padding-bottom: 30px;
   text-align: center;
   font-size: 16px;
-  line-height: 1.172;
+  line-height: 1.188;
   color: var(--text-muted-color);
 }
 
@@ -396,7 +416,7 @@ body {
 /* список фильтров  */
 
 .filters-list {
-  justify-content: space-between;
+  display: flex;
 }
 
 /* кнопка для фильтра в портфолио */
@@ -407,6 +427,8 @@ body {
   font-weight: var(--font-weight-medium);
   line-height: 1.625;
 }
+
+/* интервалы между кнопками */
 
 /* карточка - элемент портфолио */
 
