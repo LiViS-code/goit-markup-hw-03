@@ -157,9 +157,8 @@ body {
   color: var(--text-color);
 }
 
-.nav-list .nav-item:nth-of-type(n + 2) {
+.list-item:not(:first-child) {
   margin-left: 50px;
-  color: red;
 }
 
 /* список ссылок с контактами */
