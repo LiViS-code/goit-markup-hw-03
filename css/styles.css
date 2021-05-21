@@ -70,7 +70,7 @@ body {
 /* ! временный костыль */
 
 .hidden-title {
-  font-size: 0;
+  display: none;
 }
 
 /* общий стиль для параграфов */
@@ -413,6 +413,8 @@ body {
 /* ================================= */
 /* Офорление контента portfolio.html */
 
+/* контейнер секции портфолио */
+
 /* список фильтров  */
 
 .filters-list {
@@ -438,9 +440,9 @@ body {
 /* карточка - элемент портфолио */
 
 .project-list {
-  width: 370px;
   margin-top: 50px;
   display: flex;
+  flex-wrap: wrap;
   background-color: var(--background-prime-color);
 }
 
