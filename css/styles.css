@@ -144,23 +144,28 @@ body {
 /* список навигационных ссылок */
 
 .nav-list {
-  margin-left: 43px;
+  margin-left: 93px;
   padding: 32px 0;
   display: flex;
 }
 
 /* ссылки навигации по сайту */
 
-.header-box .link {
-  margin-left: 50px;
+.nav-list .link,
+.contact-list .link {
   font-weight: var(--font-weight-medium);
   color: var(--text-color);
+}
+
+.nav-list .nav-item:nth-of-type(n + 2) {
+  margin-left: 50px;
+  color: red;
 }
 
 /* список ссылок с контактами */
 
 .contact-list {
-  margin-left: 281px;
+  margin-left: 311px;
   padding: 32px 0;
   display: flex;
 }
