@@ -1,5 +1,4 @@
 /*  палитра цветов и переменные */
-
 :root {
   --font-family-site: "Roboto", sans-serif;
   --font-weight-regular: 400;
@@ -15,10 +14,12 @@
   --background-secondary-color: #2f303a;
   --backgrount-third-color: #f5f4fa;
   --project-card-border: 1px solid #eee;
+  --project-card-gap: 30px;
+  --card-team-shawow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* Исходные параметры для всего контента */
-
 body {
   font-family: var(--font-family-site);
   font-size: 14px;
@@ -29,14 +30,12 @@ body {
 }
 
 /* ссылки на страничках */
-
 .link {
   text-decoration: none;
   letter-spacing: 0.02em;
 }
 
 /* кнопки на страничках */
-
 .btn {
   font-family: var(--font-family-site);
   border: 0;
@@ -47,7 +46,6 @@ body {
 }
 
 /*кнопка - активная, при наведении курсора, фокусе */
-
 .btn.active,
 .btn:hover,
 .btn:focus {
@@ -60,7 +58,6 @@ body {
 }
 
 /* заголовки */
-
 .title {
   margin-top: 0;
   margin-bottom: 0;
@@ -68,20 +65,17 @@ body {
 
 /* скрытые заголовки сайта */
 /* ! временный костыль */
-
 .hidden-title {
   display: none;
 }
 
 /* общий стиль для параграфов */
-
 .text {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 /* общий стиль списков в шапке и секциях сайта */
-
 .list {
   margin-top: 0;
   margin-bottom: 0;
@@ -90,7 +84,6 @@ body {
 }
 
 /* интервалы между фото в секциях */
-
 .doing-list :not(:first-child),
 .features-list .item:not(:first-child),
 .team-card:not(:first-child) {
@@ -98,7 +91,6 @@ body {
 }
 
 /* логотип */
-
 .logo-link {
   --logo-dark-color: #000000;
   --logo-light-color: #ffffff;
@@ -114,13 +106,11 @@ body {
 }
 
 /* стилизация первого слова в логотипе */
-
 .logo-link > span {
   color: var(--logo-accent-color);
 }
 
 /* общий контейнер для всех разделов и секций */
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -128,32 +118,27 @@ body {
 }
 
 /* header */
-
 .header-page {
   border-bottom: 1px solid #ececec;
 }
 
 /* контейнер для содержимого шапки */
-
 .header-box {
   display: flex;
 }
 
 /* навигация - контейнер*/
-
 .nav-box {
   display: flex;
 }
 
 /* список навигационных ссылок */
-
 .nav-list {
   margin-left: 93px;
   display: flex;
 }
 
 /* ссылки навигации по сайту */
-
 .nav-list .link,
 .contact-list .link {
   padding: 32px 0;
@@ -163,27 +148,23 @@ body {
 }
 
 /* список ссылок с контактами */
-
 .contact-list {
   margin-left: 331px;
   display: flex;
 }
 
 /* ссылки контактов в шапке */
-
 .contact-list .link {
   color: var(--text-muted-color);
 }
 
 /* расстояние между ссылками в шапке */
-
 .nav-list .item:not(:first-child),
 .contact-list .item:not(:first-child) {
   margin-left: 50px;
 }
 
 /* убрал нижний зазор во всех сприсках с картинками */
-
 .card-thumb > img {
   max-width: 100%;
   height: auto;
@@ -191,7 +172,6 @@ body {
 }
 
 /* footer */
-
 .footer-page {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -199,7 +179,6 @@ body {
 }
 
 /* стилизация логотипа в подвале */
-
 .footer-box .logo-link {
   padding-top: 0;
   padding-bottom: 0;
@@ -207,33 +186,26 @@ body {
 }
 
 /* адресный список ссылок*/
-
 .address-list {
   margin-top: 20px;
   font-style: normal;
 }
 
 /* отступы между элементами списка ссылок*/
-
 .address-list .item:not(:first-child) {
   margin-top: 9px;
 }
 
 /* оформление ссылок в футере */
-
 .footer-link {
   line-height: 1.714;
   color: var(--text-color-transparent);
 }
 
 /* цвет строки-ссылки с почтовым адресом */
-
 .address-link {
   color: var(--text-light-color);
 }
-
-/* оформление подвала */
-/* ================== */
 
 /* 
 акцент при 
@@ -241,7 +213,6 @@ body {
 а также 
 активная ссылка странички 
 */
-
 .link:hover,
 .link:focus,
 .link.active {
@@ -249,16 +220,13 @@ body {
 }
 
 /* index.html */
-
 /* герой */
-
 .hero-box {
   padding: 94px 0;
   background-color: var(--background-secondary-color);
 }
 
 /* заголовок секции hero */
-
 .hero-box .title {
   padding: 106px 237px 0;
   margin-bottom: 30px;
@@ -272,7 +240,6 @@ body {
 }
 
 /* кнопка перехода к заказу в секции hero */
-
 .hero-btn {
   margin: 0 auto 106px;
   padding: 10px 32px;
@@ -284,13 +251,11 @@ body {
 }
 
 /* секция особенности */
-
 .features-box {
   padding: 94px 0;
 }
 
 /* заголовки в списках особенностей */
-
 .features-list .title {
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -300,7 +265,6 @@ body {
 }
 
 /* параграфы в списках особенностей */
-
 .features-list .text {
   margin-bottom: 0;
   line-height: 1.714;
@@ -308,21 +272,16 @@ body {
 }
 
 /* список особенностей */
-
 .features-list {
   display: flex;
 }
 
 /* Секция Чем мы занимаемся */
-
-/* убираем лишние отсупы */
-
 .doing-box {
   padding: 0 0 94px;
 }
 
 /* заголовок секции */
-
 .doing-box .title {
   margin-bottom: 50px;
   text-align: center;
@@ -332,26 +291,22 @@ body {
 }
 
 /* фото примеров */
-
 .doing-list {
   display: flex;
 }
 
 /* Секция наша команда */
-
 .team-box {
   padding: 94px 0;
   background-color: var(--backgrount-third-color);
 }
 
 /* список карточек сотрудников */
-
 .team-list {
   display: flex;
 }
 
 /* стилизация заголовков секции наша команда */
-
 .team-box .title {
   margin-bottom: 50px;
   text-align: center;
@@ -361,21 +316,19 @@ body {
 }
 
 /* стилизация карточки сотрудника */
-
 .team-card-content {
   padding: 30px 0;
 }
 
+/* карточка сотрудника команды */
 .team-card {
   background-color: var(--background-prime-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--card-team-shawow);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 
 /* стилизация фамилия, имя сотрудника */
-
 .team-card .title {
   margin-bottom: 10px;
   text-align: center;
@@ -385,7 +338,6 @@ body {
 }
 
 /* стилизация должности стотрудинка */
-
 .team-card .text {
   text-align: center;
   font-size: 16px;
@@ -394,13 +346,11 @@ body {
 }
 
 /* portfolio.html */
-
 .portfolio-box {
   padding: 94px 0;
 }
 
 /* список кнопок-фильтров */
-
 .filters-list {
   margin-bottom: 50px;
   display: flex;
@@ -408,7 +358,6 @@ body {
 }
 
 /* кнопка фильтра */
-
 .filters-btn {
   padding: 6px 22px;
   font-size: 16px;
@@ -417,33 +366,27 @@ body {
 }
 
 /* интервалы между кнопками фильтра */
-
 .btn-item:not(:first-child) {
   margin-left: 8px;
 }
 
-/* список проектов */
-
+/* список проектов*/
 .project-list {
+  margin-top: calc(-1 * var(--project-card-gap));
+  margin-left: calc(-1 * var(--project-card-gap));
   display: flex;
   flex-wrap: wrap;
   background-color: var(--background-prime-color);
 }
 
-/* горизонтальная сетка проектов*/
-
-.project-card:not(:nth-child(-1n + 3)) {
-  margin-top: 30px;
-}
-
-/* вертикальная сетка проектов*/
-
-.project-card:not(:nth-child(3n + 1)) {
-  margin-left: 30px;
+/* отступы между карточками - сетка */
+.project-card {
+  margin-top: var(--project-card-gap);
+  margin-left: var(--project-card-gap);
+  flex-basis: calc(100% / 3 - var(--project-card-gap));
 }
 
 /* блок с описание проекта */
-
 .project-card-content {
   padding: 20px 24px;
   border-left: var(--project-card-border);
@@ -452,7 +395,6 @@ body {
 }
 
 /* заголовок проекта */
-
 .project-card .title {
   margin-bottom: 4px;
   font-weight: var(--font-weight-bold);
@@ -462,7 +404,6 @@ body {
 }
 
 /* описание проекта */
-
 .project-card .text {
   font-size: 16px;
   line-height: 1.875;
