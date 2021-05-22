@@ -83,7 +83,7 @@ body {
   list-style-type: none;
 }
 
-/* интервалы между фото в секциях */
+/* интервалы между фото в секциях index.html */
 .doing-list :not(:first-child),
 .features-list .item:not(:first-child),
 .team-card:not(:first-child) {
@@ -141,8 +141,9 @@ body {
 /* ссылки навигации по сайту */
 .nav-list .link,
 .contact-list .link {
+  margin-left: auto;
   padding: 32px 0;
-  display: inline-block;
+  display: flex;
   font-weight: var(--font-weight-medium);
   color: var(--text-color);
 }
@@ -222,13 +223,12 @@ body {
 /* index.html */
 /* герой */
 .hero-box {
-  padding: 94px 0;
+  padding: 200px 0;
   background-color: var(--background-secondary-color);
 }
 
 /* заголовок секции hero */
 .hero-box .title {
-  padding: 106px 237px 0;
   margin-bottom: 30px;
   font-weight: var(--font-weight-black);
   font-size: 44px;
@@ -241,7 +241,7 @@ body {
 
 /* кнопка перехода к заказу в секции hero */
 .hero-btn {
-  margin: 0 auto 106px;
+  margin: 0 auto;
   padding: 10px 32px;
   display: block;
   font-weight: var(--font-weight-bold);
@@ -317,7 +317,7 @@ body {
 
 /* стилизация карточки сотрудника */
 .team-card-content {
-  padding: 30px 0;
+  padding: 30px;
 }
 
 /* карточка сотрудника команды */
