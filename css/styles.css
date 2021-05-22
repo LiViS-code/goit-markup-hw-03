@@ -124,7 +124,7 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 94px 15px;
+  padding: 0 15px;
 }
 
 /* header */
@@ -136,8 +136,6 @@ body {
 /* контейнер для содержимого шапки */
 
 .header-box {
-  padding-top: 0;
-  padding-bottom: 0;
   display: flex;
 }
 
@@ -151,7 +149,6 @@ body {
 
 .nav-list {
   margin-left: 93px;
-  padding: 32px 0;
   display: flex;
 }
 
@@ -159,6 +156,8 @@ body {
 
 .nav-list .link,
 .contact-list .link {
+  padding: 32px 0;
+  display: inline-block;
   font-weight: var(--font-weight-medium);
   color: var(--text-color);
 }
@@ -167,7 +166,6 @@ body {
 
 .contact-list {
   margin-left: 331px;
-  padding: 32px 0;
   display: flex;
 }
 
@@ -193,16 +191,9 @@ body {
 /* footer */
 
 .footer-page {
-  background-color: var(--background-secondary-color);
-}
-
-/* основной контейнер подвала */
-
-.footer-box {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-top: 0;
-  margin-bottom: 0;
+  background-color: var(--background-secondary-color);
 }
 
 /* стилизация логотипа в подвале */
@@ -216,14 +207,14 @@ body {
 /* адресный список ссылок*/
 
 .address-list {
-  padding-top: 11px;
+  margin-top: 20px;
   font-style: normal;
 }
 
 /* отступы между элементами списка ссылок*/
 
-.address-list .item {
-  padding-top: 9px;
+.address-list .item:not(:first-child) {
+  margin-top: 9px;
 }
 
 /* оформление ссылок в футере */
@@ -255,19 +246,20 @@ body {
   color: var(--accent-color);
 }
 
-/* ============================== */
-/* ======== index.html ========== */
+/* index.html */
 
 /* герой */
 
 .hero-box {
+  padding: 94px 0;
   background-color: var(--background-secondary-color);
 }
 
 /* заголовок секции hero */
 
 .hero-box .title {
-  padding: 106px 237px 30px;
+  padding: 106px 237px 0;
+  margin-bottom: 30px;
   font-weight: var(--font-weight-black);
   font-size: 44px;
   line-height: 1.364;
@@ -291,9 +283,14 @@ body {
 
 /* секция особенности */
 
+.features-box {
+  padding: 94px 0;
+}
+
 /* заголовки в списках особенностей */
 
 .features-list .title {
+  margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.172;
@@ -303,7 +300,6 @@ body {
 /* параграфы в списках особенностей */
 
 .features-list .text {
-  margin-top: 10px;
   margin-bottom: 0;
   line-height: 1.714;
   color: var(--text-muted-color);
@@ -319,11 +315,11 @@ body {
 
 /* убираем лишние отсупы */
 
-.doing-box .container {
-  padding-top: 0;
+.doing-box {
+  padding: 0 0 94px;
 }
 
-/* стилизация заголовков секции Чем мы занимаемся */
+/* заголовок секции */
 
 .doing-box .title {
   margin-bottom: 50px;
@@ -341,8 +337,8 @@ body {
 
 /* Секция наша команда */
 
-.team-box .container {
-  margin-bottom: 0;
+.team-box {
+  padding: 94px 0;
   background-color: var(--backgrount-third-color);
 }
 
@@ -355,7 +351,7 @@ body {
 /* стилизация заголовков секции наша команда */
 
 .team-box .title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   text-align: center;
   font-weight: var(--font-weight-bold);
   font-size: 36px;
@@ -375,8 +371,8 @@ body {
 /* стилизация фамилия, имя сотрудника */
 
 .team-card .title {
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   text-align: center;
   font-weight: var(--font-weight-medium);
   font-size: 16px;
@@ -386,7 +382,7 @@ body {
 /* стилизация должности стотрудинка */
 
 .team-card .text {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   text-align: center;
   font-size: 16px;
   line-height: 1.188;
@@ -394,6 +390,10 @@ body {
 }
 
 /* portfolio.html */
+
+.portfolio-box {
+  padding: 94px 0;
+}
 
 /* список кнопок-фильтров */
 
@@ -429,19 +429,20 @@ body {
 /* горизонтальная сетка проектов*/
 
 .project-card:not(:nth-child(-1n + 3)) {
-  padding-top: 30px;
+  margin-top: 30px;
 }
 
 /* вертикальная сетка проектов*/
 
 .project-card:not(:nth-child(3n + 1)) {
-  padding-left: 30px;
+  margin-left: 30px;
 }
 
 /* заголовок проекта */
 
 .project-card .title {
-  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 4px;
   padding-left: 24px;
   font-weight: var(--font-weight-bold);
   font-size: 18px;
@@ -454,7 +455,6 @@ body {
 /* описание проекта */
 
 .project-card .text {
-  padding-top: 4px;
   padding-bottom: 20px;
   padding-left: 24px;
   font-size: 16px;
