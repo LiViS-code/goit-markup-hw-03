@@ -382,7 +382,7 @@ body {
 /* стилизация должности стотрудинка */
 
 .team-card .text {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   text-align: center;
   font-size: 16px;
   line-height: 1.188;
