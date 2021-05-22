@@ -184,7 +184,9 @@ body {
 
 /* убрал нижний зазор во всех сприсках с картинками */
 
-.card > img {
+.card-thumb > img {
+  max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -360,6 +362,10 @@ body {
 
 /* стилизация карточки сотрудника */
 
+.team-card-content {
+  padding: 30px 0;
+}
+
 .team-card {
   background-color: var(--background-prime-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -371,7 +377,6 @@ body {
 /* стилизация фамилия, имя сотрудника */
 
 .team-card .title {
-  margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
   font-weight: var(--font-weight-medium);
@@ -382,7 +387,6 @@ body {
 /* стилизация должности стотрудинка */
 
 .team-card .text {
-  padding-bottom: 30px;
   text-align: center;
   font-size: 16px;
   line-height: 1.188;
@@ -398,6 +402,7 @@ body {
 /* список кнопок-фильтров */
 
 .filters-list {
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -420,7 +425,6 @@ body {
 /* список проектов */
 
 .project-list {
-  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   background-color: var(--background-prime-color);
@@ -438,29 +442,29 @@ body {
   margin-left: 30px;
 }
 
+/* блок с описание проекта */
+
+.project-card-content {
+  padding: 20px 24px;
+  border-left: var(--project-card-border);
+  border-right: var(--project-card-border);
+  border-bottom: var(--project-card-border);
+}
+
 /* заголовок проекта */
 
 .project-card .title {
-  margin-top: 20px;
   margin-bottom: 4px;
-  padding-left: 24px;
   font-weight: var(--font-weight-bold);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  border-left: var(--project-card-border);
-  border-right: var(--project-card-border);
 }
 
 /* описание проекта */
 
 .project-card .text {
-  padding-bottom: 20px;
-  padding-left: 24px;
   font-size: 16px;
   line-height: 1.875;
   color: var(--text-muted-color);
-  border-left: var(--project-card-border);
-  border-right: var(--project-card-border);
-  border-bottom: var(--project-card-border);
 }
