@@ -150,7 +150,7 @@ body {
 
 /* список ссылок с контактами */
 .contact-list {
-  margin-left: 331px;
+  margin-left: auto;
   display: flex;
 }
 
